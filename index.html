@@ -1,0 +1,632 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancing Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <style>
+        #parent{
+          display: flex;
+          justify-content: space-evenly;
+          gap: 40px;
+          width: 80%;
+          margin: auto;
+        }
+        #parent> div{
+          width: 520px;
+          margin: auto;
+        }
+        #parent>div>img{
+          width: 100%;
+        }
+        #parent>div>h3, #parent>div>p{
+          text-align: center;
+        }
+        #parent2{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGe2oHNMApyTulffhjKIi_vt6dMZQXuhNUJ3J-ZTY4WA&s) ;
+            /* background-repeat: no-repeat; */
+        }
+
+        #top{
+          display: flex;
+          width: 80%;
+          margin: auto;
+          gap: 30%;
+        }
+        /* #top div{
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        } */
+        #top>div>img{
+          width: 100%;
+        }
+        #top2{
+          width: 50%;
+        }
+
+        #top1 >h1{
+          font-size: 66px;
+          color: #14a800;
+        }
+        #top1>p{
+          color: #5e6d55;
+          font-weight: bolder;
+        }
+        #top1>button{
+          border-radius: 15px;
+          background-color: #14a800;
+          padding: 5px 15px 5px 15px;
+          color: white;
+          border: none;
+        }
+        #top1> h1 , #top1>p{
+          margin-bottom: 26px;
+        }
+        #mid ,#lowermid , #bod{
+          width: 80%;
+          margin: auto;
+        }
+        #mid>div{
+          display: flex;
+          gap: 30px;
+        }
+        #mid>div>img{
+          width: 50px;
+          height: 50px;
+        }
+        #mid{
+          margin-top: 40px;
+          margin-bottom: 40px;
+        }
+        #mid>div>div, #mid>div>img{
+          margin-top: 30px;
+        }
+        #mid>div>div>h3{
+          font-size: 20px;
+          font-weight: bolder;
+        }
+        #mid >button{
+          margin-top: 20px;
+          border-radius: 15px;
+          background-color: #14a800;
+          padding: 5px 15px 5px 15px;
+          color: white;
+          border: none;
+        }
+        #lowermid>div>div{
+          display: flex;
+          gap: 40px
+          ;
+        }
+        /* #onl{
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+        } */
+        #onl >div{
+          background-color: brown;
+          margin-bottom: 10px;
+          padding-left: 10px;
+          color: white;
+        }
+        #bod{
+          margin-top: 100px;
+          margin-bottom: 100px;
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          background-color: #13544e;
+          color: white;
+        }
+        #bod1{
+          padding: 20px 15px 10px 15px;
+        }
+        #bod>div>img{
+          width: 100%;
+          height: 100%;
+
+        }
+        #bod>div>button{
+          border-radius: 15px;
+          background-color: white;
+          padding: 5px 15px 5px 15px;
+          color: black;
+          border: none;
+        }
+        #bod>div>h2{
+          font-size: 56px;
+        }
+        #bod>div>p{
+          margin-top: 30px;
+        }
+        #bod>div>button{
+          margin-bottom: 20px;
+        }
+        #good{
+          color: #91e6b3;
+        }
+        #hot{
+          text-align: center;
+          color: #13544e;
+          margin-bottom: 36px;
+          font-weight: bolder;
+          font-size: 36px;
+        }
+        #parent>div>h3{
+          font-size: 16px;
+        }
+        #parent>div{
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; ;
+        }
+        #proto{
+          width: 80%;
+          margin: auto;
+          background-color: #f2f7f2;
+        }
+        #proto>div>div{
+          display: flex;
+          gap: 10px;
+        }
+        #proto>div>div>img, #protocol>div>img{
+          border-radius: 90px;
+        }
+        #protocol{
+          width: 80%;
+          margin: auto;
+          background-color: rgb(87, 248, 87);
+        }
+        #protocol>div{
+          display: flex;
+          gap: 15px;
+        }
+        #bap{
+          width: 80%;
+          margin: auto;
+          display: flex;
+          justify-content: space-evenly;
+        }
+        #proto>div, #protocol{
+          padding: 20px 0px 20px 15px;
+        }
+        #boomer{
+          /* background-color: #13544e; */
+          width: 50%;
+          position: relative;
+        }
+        #boomer>img{
+          width: 100%;
+        }
+        section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+        .contact .title::after{
+    content: "get in touch";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area{
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button{
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+  color: crimson;
+  background: none;
+}
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+.contact{
+  background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000);
+  background-repeat: no-repeat;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">FriendLY</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div id="top">
+      <div id="top1">
+        <h1>How work Should Work</h1>
+        <p>Forget the old rules. You can have the best people. Right now. Right here</p>
+        <button>Get Started</button>
+      </div>
+      <div id="top2">
+        <img src="https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/c_scale,w_580,h_580,q_auto,dpr_2.0/brontes/hero/globe@1x.jpg" alt="">
+      </div>
+      
+    </div>
+
+    <div id="mid">
+      <img src="" alt="broken">
+      <h2>Up your work game, it's free.</h2>
+      <div>
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJBBkZUMffstszBCWIrzeOp9BS-EGYCvydrNs0HCYgcjVhseHP" alt="">
+        <div>
+          <h3>No cost to join.</h3>
+          <p>Register and browse professionals, explore projects, or even book a consultation.</p>
+        </div>
+      </div>
+      <div>
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJBBkZUMffstszBCWIrzeOp9BS-EGYCvydrNs0HCYgcjVhseHP" alt="">
+        <div>
+          <h3>Post a job and hire top talent.</h3>
+          <p>Finding talent doesn’t have to be a chore. Post a job or we can search for you!</p>
+        </div>
+      </div>
+      <div>
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJBBkZUMffstszBCWIrzeOp9BS-EGYCvydrNs0HCYgcjVhseHP" alt="">
+        <div>
+          <h3>Work with the best—without breaking the bank</h3>
+          <p>Upwork makes it affordable to up your work and take advantage of low transaction rates.</p>
+        </div>
+      </div>
+      <button>Learn how to hire</button>
+    </div>
+
+    <div id="lowermid">
+      <h3>Browse talent by category</h3>
+      <p>Looking for work ? <a href=""><span id="too"> Browse jobs</span></a></p>
+      <div id="onl">
+      <div>
+        <h3>Development & IT</h3>
+        <div>
+          <img src="https://lh3.googleusercontent.com/BaaFpwdMquZpqtSSZMf8o2sg22aXcCFroK4cYnabP7Bq0VNaxqI7N42p0M_FtsqLFa7mQ5NC8zFb9aXSxFvOQggfaRJaKJziDboEQHk" alt="">
+          <p>4.85/5</p>
+        </div>
+      </div>
+
+      <div>
+        <h3>Design & Creative</h3>
+        <div>
+          <img src="https://lh3.googleusercontent.com/BaaFpwdMquZpqtSSZMf8o2sg22aXcCFroK4cYnabP7Bq0VNaxqI7N42p0M_FtsqLFa7mQ5NC8zFb9aXSxFvOQggfaRJaKJziDboEQHk" alt="">
+          <p>4.91/5</p>
+        </div>
+      </div>
+      
+      <div>
+        <h3>Sales & Marketing</h3>
+        <div>
+          <img src="https://lh3.googleusercontent.com/BaaFpwdMquZpqtSSZMf8o2sg22aXcCFroK4cYnabP7Bq0VNaxqI7N42p0M_FtsqLFa7mQ5NC8zFb9aXSxFvOQggfaRJaKJziDboEQHk" alt="">
+          <p>4.77/5</p>
+        </div>
+      </div>
+
+      <div>
+        <h3>Writing & Translation</h3>
+        <div>
+          <img src="https://lh3.googleusercontent.com/BaaFpwdMquZpqtSSZMf8o2sg22aXcCFroK4cYnabP7Bq0VNaxqI7N42p0M_FtsqLFa7mQ5NC8zFb9aXSxFvOQggfaRJaKJziDboEQHk" alt="">
+          <p>4.92/5</p>
+        </div>
+      </div>
+
+      <div>
+        <h3>Admin & Customer Support</h3>
+        <div>
+          <img src="https://lh3.googleusercontent.com/BaaFpwdMquZpqtSSZMf8o2sg22aXcCFroK4cYnabP7Bq0VNaxqI7N42p0M_FtsqLFa7mQ5NC8zFb9aXSxFvOQggfaRJaKJziDboEQHk" alt="">
+          <p>4.77/5</p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <div id="bod">
+      
+      <div id="bod1">
+        <h3>Enterprise Suite</h3>
+        <h2>This is how <span id="good">good companies
+          find good company.</span>
+        
+        </h2>
+        <p>Access the top 1% of talent on Upwork, and a full suite of hybrid workforce management tools. This is how innovation works now.</p>
+        <ol>
+          <li>Access expert talent to fill your skill gaps</li>
+          <li>Control your workflow: hire, classify and pay your talent</li>
+          <li>Partner with Upwork for end-to-end support</li>
+        </ol>
+        <button>Learn More</button>
+      </div> 
+      <div>
+        <img src="https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/f_auto,q_auto/brontes/for-enterprise/hxwn-enterprise-image-mobile@1x.png" alt="">
+      </div>
+    </div>
+    
+    
+
+    <div id="bap">
+      <div id="proto">
+        <div>
+          <h3 style="font-size: 35px; margin-bottom: 25px;">Why businesses turn to Upwork</h3>
+          <div style="margin-bottom: 15px;">
+            <img src="https://lh3.googleusercontent.com/i-eUMSXNnFamQvCJzaeBpgHJUpzVbRXDxWs9wUa94EaICioT6r_bg8cSm_ZaSpJ9EvSbOlZVdVhmx4allzVoTxYuqD6RNieft6SZwpca" alt="">
+            <div >
+              <h4>Proof of quality</h4>
+              <p>Check any pro's work samples, client reviews, and identity verification.</p>
+            </div>
+          </div>
+          <div style="margin-bottom: 15px;">
+            <img src="https://lh3.googleusercontent.com/i-eUMSXNnFamQvCJzaeBpgHJUpzVbRXDxWs9wUa94EaICioT6r_bg8cSm_ZaSpJ9EvSbOlZVdVhmx4allzVoTxYuqD6RNieft6SZwpca" alt="">
+            <div>
+              <h4>No cost until you hire</h4>
+              <p>Interview potential fits for your job, negotiate rates, and only pay for work you approve..</p>
+            </div>
+          </div>
+          <div style="margin-bottom: 15px;">
+            <img src="https://lh3.googleusercontent.com/i-eUMSXNnFamQvCJzaeBpgHJUpzVbRXDxWs9wUa94EaICioT6r_bg8cSm_ZaSpJ9EvSbOlZVdVhmx4allzVoTxYuqD6RNieft6SZwpca" alt="">
+            <div>
+              <h4>Safe and secure</h4>
+              <p>Focus on your work knowing we help protect your data and privacy. We’re here with 24/7 support if you need it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="boomer">
+        <img src="https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/c_scale,w_357,h_694,q_auto,dpr_2.0,f_auto/brontes/why-upwork/reaching-person@2x.png" alt="">
+      </div>
+
+      <div id="protocol">
+        <h1 style="font-size: 35px; margin-bottom: 20px;">We're the world's work marketplace</h1>
+        <div style="margin-bottom: 20px;">
+          <img src="https://lh3.googleusercontent.com/i-eUMSXNnFamQvCJzaeBpgHJUpzVbRXDxWs9wUa94EaICioT6r_bg8cSm_ZaSpJ9EvSbOlZVdVhmx4allzVoTxYuqD6RNieft6SZwpca" alt="">
+          <div>
+            <h3>4.9/5</h3>
+            <p>Clients rate professionals on Upwork</p>
+          </div>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <img src="https://lh3.googleusercontent.com/i-eUMSXNnFamQvCJzaeBpgHJUpzVbRXDxWs9wUa94EaICioT6r_bg8cSm_ZaSpJ9EvSbOlZVdVhmx4allzVoTxYuqD6RNieft6SZwpca" alt="">
+          <div>
+            <h3>Award Winner</h3>
+            <p>Clients rate professionals on Upwork</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <h2 id="hot" style="margin-top: 100px;">Meet Our Founders</h2>
+    <div id="parent">
+      
+        <div>
+            <img src="https://media.licdn.com/dms/image/D5603AQGlQ03uBB7sCQ/profile-displayphoto-shrink_800_800/0/1682580843623?e=1689811200&v=beta&t=ppdAFu3wPRQwsr_lREAt-feo1Wt2vNTxlVI4ZDX3l0Q" alt="broken">
+            <h3>Mrinal Kumar</h3>
+            <h3>Software Developer-Intern</h3>
+            <p>H & M</p>
+        </div>
+        <div>
+            <img src="https://media.licdn.com/dms/image/C4D03AQFM75QtnbM4xQ/profile-displayphoto-shrink_800_800/0/1633077279909?e=1689811200&v=beta&t=nt_Tt9bV8dXciWCqSf0bR-jCe08Rk2asUCLJoyGG1CY" alt="broken">
+            <h3>Abhijeet Banerjee</h3>
+            <h3>Software Analyst</h3>
+            <p>KPMG</p>
+        </div>
+        <div>
+            <img src="https://media.licdn.com/dms/image/D5603AQFB7lU78Inpiw/profile-displayphoto-shrink_800_800/0/1681116136921?e=1689811200&v=beta&t=3bY8EFgviF3D-yVAqXANIY5E6dh_u0Ds8Mn-EBNdq6s" alt="broken">
+            <h3>Deepak Singh</h3>
+            <h3>SDE-2</h3>
+            <p>PharmEasy</p>
+        </div>
+    </div>
+
+    <div id="parent2">
+        <h3 style="color: aliceblue; text-align: center; margin-top: 35px;">We are the next generation that have ideas far beyond your imagination</h3>
+    </div>
+
+    <section class="contact" id="contact">
+      <div class="max-width">
+          <h2 class="title">Contact me</h2>
+          <div class="contact-content">
+              <div class="column left">
+                  <div class="text">Get in Touch</div>
+                  <p>contact me by clicking on details .</p>
+                  <div class="icons">
+                      <div class="row">
+                          <i class="fas fa-user"></i>
+                          <div class="info">
+                              <div class="head">Name</div>
+                              <div class="sub-title">Mrinal Kumar</div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <div class="info">
+                              <div class="head">Address</div>
+                              <div class="sub-title">Dhanbad, Jharkhand</div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <i class="fas fa-envelope"></i>
+                          <div class="info">
+                              <div class="head">Email</div>
+                              <div class="sub-title">Mrinalkumar5046@gmail.com</div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <i class="fas fa-phone"></i>
+                          <div class="info">
+                              <div class="head">Phone</div>
+                              <div class="sub-title">+91 9304712748</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="column right">
+                  <div class="text">Connect me</div><br>
+                  <a href="https://www.linkedin.com/in/mrinal-kumar-227817194" class="fa fa-linkedin-square" style="font-size: 25px; color: rgb(21, 83, 119);">  Linkedin</a><br><br>
+                  <a href="https://github.com/Mrinal26" class="fa fa-github" style="font-size: 25px; color: black;">  Github</a><br><br>
+                  <a href="https://www.instagram.com/mrinal_0/" class="fa fa-instagram" style="font-size: 25px; color: rgb(209, 45, 45);">  Instagram</a><br><br>
+                  <a href="https://www.instagram.com/mrinal_0/" class="fa fa-facebook-square" style="font-size: 25px; color: blue;">  Facebook</a><br><br>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- footer section start -->
+  <footer>
+      <span>Created By <a href="https://www.linkedin.com/in/mrinal-kumar-227817194">Mrinal@5046</a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
+  </footer>
+    
+      
+</body>
+</html>
